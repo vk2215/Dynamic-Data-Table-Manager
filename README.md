@@ -14,7 +14,7 @@ A quick visual tour of the key features implemented in the application.
 
 The main interface showcasing the sortable and searchable data table.
 
-![Screenshot of the Dynamic Data Table Manager main view with sorting indicators](screenshots/ss.png)
+![Screenshot of the Dynamic Data Table Manager main view with sorting indicators](/ss.png)
 
 ## ✨ Features
 
