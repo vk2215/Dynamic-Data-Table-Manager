@@ -6,6 +6,16 @@ A comprehensive frontend interview task solution for building a dynamic, feature
 
 The primary goal of this project is to demonstrate proficiency in building dynamic user interfaces, managing application state with Redux, and implementing real-world data table functionalities such as dynamic column management, sorting, global searching, pagination, and data import/export.
 
+## 🖼️ Project Screenshots
+
+A quick visual tour of the key features implemented in the application.
+
+### Dynamic Table View & Sorting
+
+The main interface showcasing the sortable and searchable data table.
+
+![Screenshot of the Dynamic Data Table Manager main view with sorting indicators](screenshots/ss.png)
+
 ## ✨ Features
 
 ### Core Functionalities
@@ -29,7 +39,6 @@ The primary goal of this project is to demonstrate proficiency in building dynam
     * "Save All" and "Cancel All" buttons for bulk changes.
 * **🗑️ Row Actions:** Dedicated "Edit" and "Delete" actions per row, with a confirmation modal for deletion.
 * **🌙 Theme Toggle:** Light/Dark mode switching implemented using MUI theming.
-* **👆 Column Reordering:** Drag-and-drop functionality to reorder columns.
 * **📱 Fully Responsive Design:** Optimized for various screen sizes using MUI's Grid and responsive utilities.
 
 ## 💻 Tech Stack
@@ -81,6 +90,4 @@ You need to have **Node.js** and **npm** (or **yarn** / **pnpm**) installed on y
 4.  **Open the application:**
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Project Structure Highlights
 
-The project follows a standard Next.js App Router structure, leveraging conventions for clarity:
