@@ -9,12 +9,7 @@ The primary goal of this project is to demonstrate proficiency in building dynam
 ## 🖼️ Project Screenshots
 
 A quick visual tour of the key features implemented in the application.
-
-### Dynamic Table View & Sorting
-
-The main interface showcasing the sortable and searchable data table.
-
-![Screenshot of the Dynamic Data Table Manager main view with sorting indicators](/ss.png)
+![](/ss.png)
 
 ## ✨ Features
 
