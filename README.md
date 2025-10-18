@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Dynamic Data Table Manager (Next.js, Redux, MUI)
 
-## Getting Started
+A comprehensive frontend interview task solution for building a dynamic, feature-rich data table manager. This project utilizes **Next.js 14 (App Router)** for server-side rendering and routing, **Redux Toolkit** for complex state management, and **Material UI (MUI)** for a polished, responsive user interface.
 
-First, run the development server:
+## 🎯 Objective
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The primary goal of this project is to demonstrate proficiency in building dynamic user interfaces, managing application state with Redux, and implementing real-world data table functionalities such as dynamic column management, sorting, global searching, pagination, and data import/export.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Core Functionalities
+* **Table View:** Displays user data with default columns: **Name, Email, Age, Role**.
+* **Sorting:** ASC/DESC toggle sorting on all column headers.
+* **Global Search:** Client-side searching across all displayed fields.
+* **Pagination:** Client-side pagination, displaying 10 rows per page.
+* **Dynamic Columns (Manage Columns Modal):**
+    * Add new custom fields (e.g., Department, Location) to the schema.
+    * Toggle column visibility (show/hide) using checkboxes.
+    * Instantly reflects changes in the main table.
+    * **Persistence:** Column visibility preferences are persisted using **Redux Persist** or **localStorage**.
+* **Import & Export:**
+    * **CSV Import:** Upload and parse CSV files using **PapaParse**. Includes basic error handling for invalid data format.
+    * **CSV Export:** Exports the **current table view** to a `.csv` file using **FileSaver.js/Blob**, only including the currently **visible columns**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Bonus Features (Implemented)
+* **✏️ Inline Row Editing:**
+    * Double-click on a row to enter edit mode.
+    * Input validation (e.g., **Age** must be a number).
+    * "Save All" and "Cancel All" buttons for bulk changes.
+* **🗑️ Row Actions:** Dedicated "Edit" and "Delete" actions per row, with a confirmation modal for deletion.
+* **🌙 Theme Toggle:** Light/Dark mode switching implemented using MUI theming.
+* **👆 Column Reordering:** Drag-and-drop functionality to reorder columns.
+* **📱 Fully Responsive Design:** Optimized for various screen sizes using MUI's Grid and responsive utilities.
 
-## Learn More
+## 💻 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+| Category | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Framework** | **Next.js 14** (App Router) | React framework for routing and server components. |
+| **State Mgmt** | **Redux Toolkit** & **Redux Persist** | Efficient global state management and state persistence. |
+| **UI Library** | **Material UI (v5+)** | Component library for consistent, accessible design. |
+| **Language** | **TypeScript** | Static typing for improved code quality and robustness. |
+| **Forms** | **React Hook Form** | Performant, flexible form state management. |
+| **CSV Handling** | **PapaParse** | Robust client-side CSV parsing. |
+| **File Export** | **FileSaver.js** / **Blob** | Client-side file generation and downloading. |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You need to have **Node.js** and **npm** (or **yarn** / **pnpm**) installed on your system.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [YOUR_REPOSITORY_URL]
+    cd dynamic-data-table-manager
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
+
+4.  **Open the application:**
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Project Structure Highlights
+
+The project follows a standard Next.js App Router structure, leveraging conventions for clarity:
